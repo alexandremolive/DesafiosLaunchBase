@@ -1,0 +1,97 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Conteúdo</title>
+{% endblock %}
+
+{% block links %}
+    <a class="link" href="/sobre" target="blank">SOBRE</a>
+    <a class="link_selected" href="/conteudo" target="_blank">CONTEÚDOS</a>
+    <a class="link" href="https://discordapp.com/invite/gCRAFhc" target="blank">COMUNIDADE</a>
+    <a class="link" href="mailto:oi@rocketseat.com.br" title="Mande um e-mail">E-MAIL</a>
+    <a class="link" href="tel:+5547992078767" title="Você também pode ligar">TELEFONE</a>
+    {% endblock%}
+
+    {% block content %}
+
+        <section class="cards">
+
+            <div class="card" id="starter">
+
+                <div class="card_image_container">
+                    <img class="first" src="/starter.svg" alt="logo curso starter">
+
+                </div>
+                <div class="card_content">
+                    <p>Cursos 100% online e gratuitos para você entrar com o pé direito nas tecnologias mais desejadas do mercado.</p>
+
+                </div>
+                <div class="card_info">
+                    <p>
+                        2 Módulos</p>
+                    <p class="card_price">Conhecer</p>
+
+                </div>
+
+            </div>
+            <div class="card" id="launchbase">
+
+                <div class="card_image_container">
+                    <img class="second" src="/launchbase.svg" alt="logo curso launchbase">
+
+                </div>
+                <div class="card_content">
+                    <p>Domine o desenvolvimento web do zero e acelere na direção dos seus objetivos.</p>
+
+                </div>
+                <div class="card_info">
+                    <p>
+                        Módulos</p>
+                    <p class="card_price">Conhecer</p>
+
+                </div>
+
+            </div>
+            <div class="card" id="gostack">
+
+                <div class="card_image_container">
+                    <img class="third" src="/gostack.svg" alt="logo curso GOSTACK">
+
+                </div>
+                <div class="card_content">
+                    <p>Domine o back-end, o front-end e o mobile através do método que vai te guiar direto ao ponto na direção dos seus objetivos.</p>
+
+                </div>
+                <div class="card_info">
+                    <p>
+                        Módulos</p>
+                    <p class="card_price">Conhecer</p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <div class="modal-overlay">
+            <div class="modal">
+                <a class="close-modal">
+
+                    <i class="material-icons">close</i>
+                </a>
+                <a class="maximize-modal">
+                    <i class="material-icons">maximize</i>
+
+                </a>
+                <div class="modal-content">
+                    <iframe src="" frameborder="0"></iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="/scripts.js"></script>
+
+    {% endblock %}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+
+        {% block head %}
+            <title>Home</title>
+        {% endblock %}
+
+    </head>
+
+    <body>
+        <header>
+            <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+            <div class="logo_link">
+                <img src="/logo-rocketseat.svg" alt="Logo empresa">
+
+                {% block links %}
+                    <a class="link" href="/sobre" target="blank">SOBRE</a>
+                    <a class="link" href="/conteudo" target="_blank">CONTEÚDOS</a>
+                    <a class="link" href="https://discordapp.com/invite/gCRAFhc" target="blank">COMUNIDADE</a>
+                    <a class="link" href="mailto:oi@rocketseat.com.br" title="Mande um e-mail">E-MAIL</a>
+                    <a class="link" href="tel:+5547992078767" title="Você também pode ligar">TELEFONE</a>
+                    {% endblock%}
+
+                    <div class="social">
+                        <a class="link" href="https://github.com/Rocketseat" target="_blank">
+                            <img src="/git.png" alt="acesse GitHub">
+                        </a>
+                        <a class="link" href="http://instagram.com/rocketseat_oficial" target="_blank">
+                            <img src="/instagram.svg" alt="acesse Instagram">
+                        </a>
+                        <a class="link" href="http://fb.com/rocketseat" target="_blank">
+                            <img src="/facebook.svg" alt="acesse facebook">
+                        </a>
+                    </div>
+                </div>
+
+            </header>
+            {% block content %}{% endblock %}
+
+        </body>
+    </html>
