@@ -1,9 +1,9 @@
 <h1 align="center">
-    <img src="https://github.com/alexandremolive/launchbase/blob/master/public/launchbase.svg">
+    <img src="https://github.com/alexandremolive/DesafiosLaunchBase/blob/master/public/launchbase.svg">
 </h1>
 
 <h1>
-    <img src="https://github.com/alexandremolive/launchbase/blob/master/public/apresenta%C3%A7%C3%A3o.gif">
+    <img src="https://github.com/alexandremolive/DesafiosLaunchBase/blob/master/public/apresenta%C3%A7%C3%A3o.gif">
 </h1>
 
 ## **SOBRE**
