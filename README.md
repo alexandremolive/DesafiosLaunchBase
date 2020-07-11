@@ -3,7 +3,7 @@
 </h1>
 
 <h1>
-    <img src="https://github.com/alexandremolive/DesafiosLaunchBase/blob/master/public/final3.3.mp4">
+    <img src="https://github.com/alexandremolive/DesafiosLaunchBase/blob/master/public/desafio3.3.gif">
 </h1>
 
 ## **SOBRE**
