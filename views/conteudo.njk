@@ -17,61 +17,28 @@
 
         <section class="cards">
 
-            <div class="card" id="starter">
+         {% for item in items %}
+            <div class="card" id="{{item.id}}">
 
                 <div class="card_image_container">
-                    <img class="first" src="/starter.svg" alt="logo curso starter">
+                    <img src="/{{item.id}}.svg" alt="logo curso {{item.id}}">
 
                 </div>
                 <div class="card_content">
-                    <p>Cursos 100% online e gratuitos para você entrar com o pé direito nas tecnologias mais desejadas do mercado.</p>
+                    <p>{{item.title}}</p>
 
                 </div>
                 <div class="card_info">
                     <p>
-                        2 Módulos</p>
-                    <p class="card_price">Conhecer</p>
-
-                </div>
-
-            </div>
-            <div class="card" id="launchbase">
-
-                <div class="card_image_container">
-                    <img class="second" src="/launchbase.svg" alt="logo curso launchbase">
-
-                </div>
-                <div class="card_content">
-                    <p>Domine o desenvolvimento web do zero e acelere na direção dos seus objetivos.</p>
-
-                </div>
-                <div class="card_info">
-                    <p>
-                        Módulos</p>
-                    <p class="card_price">Conhecer</p>
-
-                </div>
-
-            </div>
-            <div class="card" id="gostack">
-
-                <div class="card_image_container">
-                    <img class="third" src="/gostack.svg" alt="logo curso GOSTACK">
-
-                </div>
-                <div class="card_content">
-                    <p>Domine o back-end, o front-end e o mobile através do método que vai te guiar direto ao ponto na direção dos seus objetivos.</p>
-
-                </div>
-                <div class="card_info">
-                    <p>
-                        Módulos</p>
-                    <p class="card_price">Conhecer</p>
+                        {{item.duration}}</p>
+                    <p class="card_price">{{item.price}}</p>
 
                 </div>
 
             </div>
 
+        {% endfor %}
+      
         </section>
         <div class="modal-overlay">
             <div class="modal">

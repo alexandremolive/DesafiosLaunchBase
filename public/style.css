@@ -176,10 +176,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
+    cursor: pointer;
+    
+
     }
     .card {
+    width: 100%;
     background-color: #282a36;
     box-shadow: 10px 5px 5px black;
+    display: grid;
+    transition: all linear 300ms;
     }
     .card:hover {
     -webkit-transform: scale(1.1);
@@ -191,34 +197,12 @@
 
     .card_image_container {
     width: 100%;
+    display: flex;
     }
-
-
-
-    .card_image_container img.first{
-    margin-left: 70px;
-    width: 120px;
-    height: 120px;
-    margin-top: 10px;
-    margin-bottom: 45px;
+    .card_image_container img {
+    margin: 0 auto;
     }
-    .card_image_container img.second{
-    width: 200px;
-    height: 200px;
-    margin-top: -30px;
-    margin-left: 35px;
-    margin-bottom: 10px;
-
-
-    }
-    .card_image_container img.third{
-    width: 140px;
-    height: 140px;
-    margin-left: 55px;
-    margin-bottom: 35px;
-
-
-    }
+        
     .card_content,
     .card_info {
     padding: 24px;
@@ -227,6 +211,7 @@
     .card_info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
     }
     .card_price {
     background-color: #7159c1;
@@ -285,11 +270,7 @@
     height: 100%;
     margin: 0 auto;
 
-    }iframe {
-    width: 100%;
-    height: 90%;
-    position: absolute;
-    top: 5%;
+  
     }
     /* PAGE NOT-FOUND */
     .home_notfound {
@@ -308,3 +289,22 @@
     width: 400px;
     }
 
+
+    /* PAGE COURSE */
+
+    .courses {
+        margin: 0 auto;
+        max-width: 800px;
+        height: 100vh;
+        position: relative;
+    }
+    .card_course_container {
+        width: 100%;
+        height: 90%;
+    }
+    iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    }
